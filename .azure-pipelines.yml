@@ -4,4 +4,6 @@ jobs:
     vmImage: 'ubuntu-20.04'
   steps:
   - bash: sudo apt-get update; sudo apt-get install -y sysbench
-  - bash: sysbench --test=cpu --cpu-max-prime=20000 run
+    displayName: Install sysbench
+  - bash: bench.sh
+    displayName: Run benchmarks
