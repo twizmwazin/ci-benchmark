@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 
 function fileio() {
         sysbench --test=fileio --file-total-size=128G prepare
