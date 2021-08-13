@@ -2,9 +2,9 @@
 set -ex
 
 function fileio() {
-        sysbench --test=fileio --file-total-size=128G prepare
-        sysbench --test=fileio --file-total-size=128G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
-        sysbench --test=fileio --file-total-size=128G cleanup
+        sysbench --test=fileio prepare
+        sysbench --test=fileio --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+        sysbench --test=fileio cleanup
 }
 
 function cpu() {
