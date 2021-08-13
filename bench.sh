@@ -12,7 +12,7 @@ function cpu() {
 }
 
 function threads() {
-        sysbench --test=threads --thread-locks=1 --max-time=20s run
+        sysbench --test=threads --thread-locks=1 run
 }
 
 function mutex() {
