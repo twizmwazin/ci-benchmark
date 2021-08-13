@@ -5,5 +5,5 @@ jobs:
   steps:
   - bash: sudo apt-get update; sudo apt-get install -y sysbench
     displayName: Install sysbench
-  - bash: bench.sh
+  - bash: ./bench.sh
     displayName: Run benchmarks
